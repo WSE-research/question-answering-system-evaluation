@@ -1,0 +1,23 @@
+# Evaluation of Knowledge Graph Question Answering (KGQA) systems 
+
+Here, is a short overview of the contributions of the http://wse-research.org/[WSE group] to the evaluation of Knowledge Graph Question Answering (KGQA) systems.
+All are located in their own GitHub repositories.
+
+* The following datasets were created to establish a common benchmark for KGQA systems:
+** https://github.com/KGQA/QALD_9_plus[*QALD-9-plus*] is the dataset for Knowledge Graph Question Answering based on well-known https://github.com/ag-sc/QALD/tree/master/9/data[QALD-9]. It enables to train and test KGQA systems over the https://dbpedia.org[DBpedia] and https://www.wikidata.org[Wikidata] knowledge graphs using _high-quality_ questions in 10 different languages: 
+*** English, German, Russian, French, Spanish, Armenian, Belarusian, Lithuanian, Bashkir, and Ukrainian.
+** https://github.com/KGQA/QALD_10[*QALD-10*] is the dataset for the 10th Question Answering over Linked Data Challenge. It contains questions in 4 different language over the Wikidata knowledge graph: 
+*** English, Chinese, Russian, and  German.
+* Our https://github.com/WSE-research/QADO-question-answering-dataset-RDFizer[*QADO Question Answering Dataset RDFizer*] is dedicated to the common challenge of working with different datasets. It converts the datasets into the https://www.w3.org/TR/turtle/[RDF Turtle] format and provides a unified interface to access the data.
+** The https://github.com/WSE-research/QADO-question-answering-dataset-RDFizer/blob/main/app/ontology/qa-benchmark-ontology.ttl[Question Answering Dataset Ontology (QADO)] is used to describe the datasets in RDF. 
+** The following datasets are supported: 
+*** QALD - Question Answering over Linked Data: supported versions: 5, 6, 8, 9, 9-plus, and 10
+*** LC-QuAD - Largescale Complex Question Answering Dataset: supported versions: 1.0 and 2.0
+*** RuBQ - A Russian Knowledge Base Question Answering and Machine Reading Comprehension Data Set: supported versions: 1.0 and 2.0
+*** Mintaka - A complex, natural, and multilingual dataset for end-to-end question answering
+*** ComplexWebQuestions - A dataset for answering complex questions that require reasoning over multiple web snippets
+* The Knowledge Graph Question Answering systems and their evaluation are collected in the https://kgqa.github.io/leaderboard/[*KGQA leaderboard*]. It is dedicated to transparency and reproducability of research results. The collection consists of more than 100 KGQA systems and their evaluation results using several knowledge graphs and their corresponding datasets:
+** https://dbpedia.org[DBpedia knowledge graph]: LC-QuAD 1.0, LC-QuAD 2.0, rewordQALD-9, QALD-9-plus, QALD-9, QALD-8, QALD-7, QALD-6, QALD-5, QALD-4, QALD-3, QALD-2, QALD-1, SimpleDBpediaQA, MLPQ, Monument
+** https://www.wikidata.org[Wikidata knowledge graph]: KQA Pro, RuBQ 1.0, RuBQ 2.0, Compositional Wikidata Questions, TimeQuestions, CronQuestions, CLC-QuAD, SimpleQuestionsWikidata, MKQA, Mintaka
+** https://en.wikipedia.org/wiki/Freebase_(database)[Freebase knowledge graph]: Free917, WebQuestions, ComplexQuestions, GraphQuestions, WebQuestionSP, ComplexWebQuestions, 30M Factoid QA, PathQuestion, Compositional Freebase Questions, GrailQA, TempQuestions, freebaseQA
+** Other knowledge graphs: MetaQA, EventKQ/EventQA, WC2014QA
