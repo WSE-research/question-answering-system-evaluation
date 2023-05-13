@@ -1,3 +1,15 @@
+:toc:
+:toclevels: 5
+:toc-placement!:
+:source-highlighter: highlight.js
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
 # Evaluation of Knowledge Graph Question Answering (KGQA) systems 
 
 Here, is a short overview of the contributions of the http://wse-research.org/[WSE group] to the evaluation of Knowledge Graph Question Answering (KGQA) systems.
@@ -8,6 +20,11 @@ All are located in their own GitHub repositories.
 *** English, German, Russian, French, Spanish, Armenian, Belarusian, Lithuanian, Bashkir, and Ukrainian.
 ** https://github.com/KGQA/QALD_10[*QALD-10*] is the dataset for the 10th Question Answering over Linked Data Challenge. It contains questions in 4 different language over the Wikidata knowledge graph: 
 *** English, Chinese, Russian, and  German.
+
+++++
+<img align="right" role="right" height="96" src="https://repository-images.githubusercontent.com/431670262/b11511f7-28c4-4d44-a884-9987128b535f"/>
+++++
+
 * Our https://github.com/WSE-research/QADO-question-answering-dataset-RDFizer[*QADO Question Answering Dataset RDFizer*] is dedicated to the common challenge of working with different datasets. It converts the datasets into the https://www.w3.org/TR/turtle/[RDF Turtle] format and provides a unified interface to access the data.
 ** The https://github.com/WSE-research/QADO-question-answering-dataset-RDFizer/blob/main/app/ontology/qa-benchmark-ontology.ttl[Question Answering Dataset Ontology (QADO)] is used to describe the datasets in RDF. 
 ** The following datasets are supported: 
